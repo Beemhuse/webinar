@@ -149,7 +149,7 @@ export default function LandingPage() {
 
         {/* Footer */}
       </div>
-      <footer className="mt-20  relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row text-2xl justify-between items-center gap-8 text-black font-medium">
+      <footer className="mt-20  relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row md:text-2xl  justify-between items-center gap-8 text-black font-medium">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-1">
             <Link href="https://www.instagram.com/oglepropertyng" target="_blank" className="bg-black p-1 rounded">
