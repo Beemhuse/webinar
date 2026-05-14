@@ -42,12 +42,12 @@ export default function LandingPage() {
         {/* Hero Section */}
         <div className="relative mb-16">
           <div className="md:w-3/4">
-            <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] mb-4 tracking-tighter">
+            <h1 className="text-6xl md:text-9xl font-black text-white leading-[0.9] mb-4 tracking-tighter">
               Ogle Agent
               <br />
               Summit
             </h1>
-            <p className="text-xl md:text-2xl font-bold text-white mb-6 leading-tight">
+            <p className="text-xl md:text-3xl font-bold text-white mb-6 leading-tight">
               Inspection to Payment: Why Deals
               <br className="hidden md:block" /> Fall Through (and How to Fix
               It)
@@ -60,7 +60,7 @@ export default function LandingPage() {
           </div>
 
           {/* Large Key Graphic */}
-          <div className="absolute -top-10 right-0 w-48 md:w-80 z-50 h-auto opacity-80 pointer-events-none hidden md:block">
+          <div className="absolute -top-8 right-70 w-48 md:w-50 z-50 h-auto opacity-80 pointer-events-none hidden md:block">
             <Image
               src="/Asset 2.png"
               alt="Key Graphic"

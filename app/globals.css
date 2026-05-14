@@ -2,33 +2,12 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@font-face {
-  font-family: 'Aptos';
-  src: url('/font/Aptos.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aptos';
-  src: url('/font/Aptos-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aptos';
-  src: url('/font/Aptos-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Aptos', sans-serif;
+  --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-heading);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -136,9 +115,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Aptos', sans-serif;
   }
   html {
-    font-family: 'Aptos', sans-serif;
+    @apply font-sans;
   }
 }

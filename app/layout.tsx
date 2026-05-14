@@ -1,6 +1,28 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+
+const aptos = localFont({
+  src: [
+    {
+      path: "../public/font/Aptos.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/font/Aptos-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/font/Aptos-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "Ogle Agent Summit | Inspection to Payment",
@@ -32,7 +54,8 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        "dark"
+        "dark",
+        aptos.variable
       )}
       style={{ colorScheme: "dark" }}
     >
