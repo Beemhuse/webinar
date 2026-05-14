@@ -4,6 +4,7 @@ import Image from "next/image";
 import { SpeakerCard } from "@/components/SpeakerCard";
 import { KeyLogo } from "@/components/KeyLogo";
 import { Calendar, Clock, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -25,9 +26,16 @@ export default function LandingPage() {
         <header className="mb-12">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 flex items-center justify-center">
-             <Image src='ogle-logo.svg' alt="ogle-logo" width={50} height={50} />
+              <Image
+                src="ogle-logo.svg"
+                alt="ogle-logo"
+                width={50}
+                height={50}
+              />
             </div>
-            <span className="text-3xl font-bold text-white tracking-tight">Ogle</span>
+            <span className="text-3xl font-bold text-white tracking-tight">
+              Ogle
+            </span>
           </div>
         </header>
 
@@ -35,14 +43,19 @@ export default function LandingPage() {
         <div className="relative mb-16">
           <div className="md:w-3/4">
             <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] mb-4 tracking-tighter">
-              Ogle Agent<br />Summit
+              Ogle Agent
+              <br />
+              Summit
             </h1>
             <p className="text-xl md:text-2xl font-bold text-white mb-6 leading-tight">
-              Inspection to Payment: Why Deals<br className="hidden md:block" /> Fall Through (and How to Fix It)
+              Inspection to Payment: Why Deals
+              <br className="hidden md:block" /> Fall Through (and How to Fix
+              It)
             </p>
             <div className="w-full h-1 bg-white/30 mb-6"></div>
             <p className="text-lg md:text-xl font-medium text-white/90 max-w-md leading-snug">
-              This Webinar is for Real Estate Agents and Realtors serious about making it BIG
+              This Webinar is for Real Estate Agents and Realtors serious about
+              making it BIG
             </p>
           </div>
 
@@ -90,11 +103,15 @@ export default function LandingPage() {
                   <Calendar className="w-8 h-8" />
                 </div>
                 <div>
-                  <p className="text-lg font-black leading-none uppercase">Tuesday 26th</p>
-                  <p className="text-lg font-black leading-none uppercase">May 2026</p>
+                  <p className="text-lg font-black leading-none uppercase">
+                    Tuesday 26th
+                  </p>
+                  <p className="text-lg font-black leading-none uppercase">
+                    May 2026
+                  </p>
                 </div>
               </div>
-              
+
               <div className="w-px h-12 bg-white/20 hidden md:block"></div>
 
               <div className="flex items-center gap-4 text-white">
@@ -102,8 +119,12 @@ export default function LandingPage() {
                   <Clock className="w-8 h-8" />
                 </div>
                 <div>
-                  <p className="text-lg font-black leading-none uppercase">5pm</p>
-                  <p className="text-lg font-black leading-none uppercase">WAT</p>
+                  <p className="text-lg font-black leading-none uppercase">
+                    5pm
+                  </p>
+                  <p className="text-lg font-black leading-none uppercase">
+                    WAT
+                  </p>
                 </div>
               </div>
             </div>
@@ -128,29 +149,56 @@ export default function LandingPage() {
 
         {/* Footer */}
       </div>
-        <footer className="mt-20 relative p-4 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-black font-medium">
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-3">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      <footer className="mt-20 relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-black font-medium">
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <Link href={""}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M16 21.75A5.75 5.75 0 0 0 21.75 16V8A5.75 5.75 0 0 0 16 2.25H8A5.75 5.75 0 0 0 2.25 8v8A5.75 5.75 0 0 0 8 21.75zM13.711 5.763A.75.75 0 0 0 12.25 6v9A2.25 2.25 0 1 1 10 12.75a.75.75 0 0 0 0-1.5A3.75 3.75 0 1 0 13.75 15V8.458c.767.712 1.847 1.292 3.25 1.292a.75.75 0 0 0 0-1.5c-.972 0-1.711-.4-2.259-.919c-.56-.532-.898-1.173-1.03-1.568"
+                  clip-rule="evenodd"
+                />
               </svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </Link>
+            <Link href={""}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="#000"
+                  fill-rule="evenodd"
+                  d="M15.725 22v-7.745h2.6l.389-3.018h-2.99V9.31c0-.874.243-1.47 1.497-1.47h1.598v-2.7a21 21 0 0 0-2.33-.12c-2.304 0-3.881 1.407-3.881 3.99v2.227H10v3.018h2.607V22H3.104C2.494 22 2 21.506 2 20.896V3.104C2 2.494 2.494 2 3.104 2h17.792C21.506 2 22 2.494 22 3.104v17.792c0 .61-.494 1.104-1.104 1.104z"
+                />
               </svg>
-              <span className="text-sm">@oglepropertyng</span>
-            </div>
+            </Link>
+            <span className="text-sm">@oglepropertyng</span>
           </div>
+        </div>
 
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
+          <div className="bg-black text-white p-2 rounded">
             <Mail className="w-5 h-5" />
-            <span className="text-sm">support@ogle.com.ng</span>
           </div>
+          <span className="text-sm">support@ogle.com.ng</span>
+        </div>
 
-          <div className="flex items-center gap-2">
-            <Phone className="w-5 h-5" />
-            <span className="text-sm">+234 701 756 4750</span>
-          </div>
-        </footer>
+        <div className="flex items-center gap-2">
+          <Phone className="w-5 h-5" />
+          <span className="text-sm">+234 701 756 4750</span>
+        </div>
+      </footer>
     </main>
   );
 }
