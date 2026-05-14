@@ -149,7 +149,7 @@ export default function LandingPage() {
 
         {/* Footer */}
       </div>
-      <footer className="mt-20 relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-black font-medium">
+      <footer className="mt-20  relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row text-2xl justify-between items-center gap-8 text-black font-medium">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-1">
             <Link href="https://www.instagram.com/oglepropertyng" target="_blank" className="bg-black p-1 rounded">
@@ -200,7 +200,7 @@ export default function LandingPage() {
                 />
               </svg>
             </Link>
-            <span className="text-sm">@oglepropertyng</span>
+            <span className="font-bold">@oglepropertyng</span>
           </div>
         </div>
 
@@ -225,7 +225,7 @@ export default function LandingPage() {
             <path fill="none" d="M0 0h36v36H0z" />
           </svg>
 
-          <span className="text-sm">support@ogle.com.ng</span>
+          <span className="font-bold">support@ogle.com.ng</span>
         </div>
 
         <div className="flex items-center gap-2">
@@ -241,7 +241,7 @@ export default function LandingPage() {
               d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
             />
           </svg>
-          <span className="text-sm">+234 701 756 4750</span>
+          <span className="font-bold">+234 701 756 4750</span>
         </div>
       </footer>
     </main>
