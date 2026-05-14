@@ -1,29 +1,6 @@
 import type { Metadata } from "next";
-import {
-  Geist,
-  Geist_Mono,
-  Noto_Sans,
-  Playfair_Display,
-} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-
-const playfairDisplayHeading = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-heading",
-});
-
-const notoSans = Noto_Sans({ subsets: ["latin"], variable: "--font-sans" });
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Ogle Agent Summit | Inspection to Payment",
@@ -55,15 +32,11 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        "dark",
-        geistSans.variable,
-        geistMono.variable,
-        notoSans.variable,
-        playfairDisplayHeading.variable,
+        "dark"
       )}
       style={{ colorScheme: "dark" }}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}
       </body>
     </html>
