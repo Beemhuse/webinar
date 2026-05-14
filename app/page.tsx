@@ -151,8 +151,8 @@ export default function LandingPage() {
       </div>
       <footer className="mt-20 relative p-4 px-10 border-tr-20 bg-white border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-black font-medium">
         <div className="flex items-center gap-6">
-          <div className="flex items-center gap-3">
-            <Link href={""}>
+          <div className="flex items-center gap-1">
+            <Link href="https://www.instagram.com/oglepropertyng" target="_blank" className="bg-black p-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -160,12 +160,13 @@ export default function LandingPage() {
                 viewBox="0 0 24 24"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                  fill="#000"
-                  fill-rule="evenodd"
-                  d="M16 21.75A5.75 5.75 0 0 0 21.75 16V8A5.75 5.75 0 0 0 16 2.25H8A5.75 5.75 0 0 0 2.25 8v8A5.75 5.75 0 0 0 8 21.75zM13.711 5.763A.75.75 0 0 0 12.25 6v9A2.25 2.25 0 1 1 10 12.75a.75.75 0 0 0 0-1.5A3.75 3.75 0 1 0 13.75 15V8.458c.767.712 1.847 1.292 3.25 1.292a.75.75 0 0 0 0-1.5c-.972 0-1.711-.4-2.259-.919c-.56-.532-.898-1.173-1.03-1.568"
-                  clip-rule="evenodd"
-                />
+                <g fill="none">
+                  <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                  <path
+                    fill="#fff"
+                    d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm-4 5a4 4 0 1 0 0 8a4 4 0 0 0 0-8m0 2a2 2 0 1 1 0 4a2 2 0 0 1 0-4m4.5-3.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2"
+                  />
+                </g>
               </svg>
             </Link>
             <Link href={""}>
@@ -178,7 +179,23 @@ export default function LandingPage() {
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path
                   fill="#000"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
+                  d="M16 21.75A5.75 5.75 0 0 0 21.75 16V8A5.75 5.75 0 0 0 16 2.25H8A5.75 5.75 0 0 0 2.25 8v8A5.75 5.75 0 0 0 8 21.75zM13.711 5.763A.75.75 0 0 0 12.25 6v9A2.25 2.25 0 1 1 10 12.75a.75.75 0 0 0 0-1.5A3.75 3.75 0 1 0 13.75 15V8.458c.767.712 1.847 1.292 3.25 1.292a.75.75 0 0 0 0-1.5c-.972 0-1.711-.4-2.259-.919c-.56-.532-.898-1.173-1.03-1.568"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </Link>
+            <Link href={"https://web.facebook.com/oglepropertyng?_rdc=1&_rdr#"} target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="#000"
+                  fillRule="evenodd"
                   d="M15.725 22v-7.745h2.6l.389-3.018h-2.99V9.31c0-.874.243-1.47 1.497-1.47h1.598v-2.7a21 21 0 0 0-2.33-.12c-2.304 0-3.881 1.407-3.881 3.99v2.227H10v3.018h2.607V22H3.104C2.494 22 2 21.506 2 20.896V3.104C2 2.494 2.494 2 3.104 2h17.792C21.506 2 22 2.494 22 3.104v17.792c0 .61-.494 1.104-1.104 1.104z"
                 />
               </svg>
@@ -188,14 +205,42 @@ export default function LandingPage() {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="bg-black text-white p-2 rounded">
-            <Mail className="w-5 h-5" />
-          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 36 36"
+          >
+            <path d="M0 0h36v36H0z" fill="none" />
+            <path
+              fill="#000"
+              d="M32.33 6a2 2 0 0 0-.41 0h-28a2 2 0 0 0-.53.08l14.45 14.39Z"
+              className="clr-i-solid clr-i-solid-path-1"
+            />
+            <path
+              fill="#000"
+              d="m33.81 7.39l-14.56 14.5a2 2 0 0 1-2.82 0L2 7.5a2 2 0 0 0-.07.5v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-.12-.61M5.3 28H3.91v-1.43l7.27-7.21l1.41 1.41Zm26.61 0h-1.4l-7.29-7.23l1.41-1.41l7.27 7.21Z"
+              className="clr-i-solid clr-i-solid-path-2"
+            />
+            <path fill="none" d="M0 0h36v36H0z" />
+          </svg>
+
           <span className="text-sm">support@ogle.com.ng</span>
         </div>
 
         <div className="flex items-center gap-2">
-          <Phone className="w-5 h-5" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="#000"
+              d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+            />
+          </svg>
           <span className="text-sm">+234 701 756 4750</span>
         </div>
       </footer>
